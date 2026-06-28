@@ -9,13 +9,7 @@ using std::cout;
 using std::getline;
 using std::string;
 using std::tolower;
-
-void swap(char &a, char &b)
-{
-    char temp = a;
-    a = b;
-    b = temp;
-}
+using std::swap;
 
 void reverseString(string &str)
 {
