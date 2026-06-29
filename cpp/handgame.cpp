@@ -39,7 +39,7 @@ int main()
     // error checking
     while (userChoice != "rock" && userChoice != "paper" && userChoice != "scissors")
     {
-        cout << "Invalid input. Please enter rock, paper, or scissors: ";
+        cout << "Invalid input.\n Please enter rock, paper, or scissors: ";
         userChoice = inputChoice();
         userChoice = toLowerCase(userChoice);
     }
@@ -65,43 +65,43 @@ int main()
     // case-1
     if (userChoice == "rock" && compChoice == "scissors")
     {
-        cout << "You win! Computer chose scissors.";
+        cout << "You win! Computer chose scissors.\n";
     }
 
     // case-2
     else if (userChoice == "paper" && compChoice == "rock")
     {
-        cout << "You win! Computer chose rock.";
+        cout << "You win! Computer chose rock.\n";
     }
 
     // case-3
     else if (userChoice == "scissors" && compChoice == "paper")
     {
-        cout << "You win! Computer chose paper.";
+        cout << "You win! Computer chose paper.\n";
     }
 
     // case-4
     else if (userChoice == "rock" && compChoice == "paper")
     {
-        cout << "You lose! Computer chose paper.";
+        cout << "You lose! Computer chose paper.\n";
     }
 
     // case-5
     else if (userChoice == "paper" && compChoice == "scissors")
     {
-        cout << "You lose! Computer chose scissors.";
+        cout << "You lose! Computer chose scissors.\n";
     }
 
     // case-6
     else if (userChoice == "scissors" && compChoice == "rock")
     {
-        cout << "You lose! Computer chose rock.";
+        cout << "You lose! Computer chose rock.\n";
     }
 
     // case-7
     else if (userChoice == compChoice)
     {
-        cout << "It's a tie! Computer also chose " << compChoice << ".";
+        cout << "It's a tie! Computer also chose " << compChoice << ".\n";
     }
 
     return 0;
